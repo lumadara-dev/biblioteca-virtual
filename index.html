@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha biblioteca</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Terror</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Medieval</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ficção</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Música</a>
+                </li>
+            </ul>
+            <img src="./img/logo2.png" alt="Logo da Alura Books" class="container__imagem">
+            <h1 class="container__titulo">
+                Meus<b class="container__titulo--negrito"> Livros</b>
+            </h1>
+        </div>
+
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <label for="opcoes-menu" class="opcoes__rotulo">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Terror</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Medieval</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ficção</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Música</a>
+                </li>
+            </ul>
+            <li class="opcoes__item">
+                <a href="#" class="opcoes__link">Favoritos</a>
+            </li>
+            <li class="opcoes__item">
+                <a href="#" class="opcoes__link">Minha estante</a>
+            </li>
+        </ul>
+
+        <div class="container">
+            <a href="#">
+                <img src="./img/Favoritos.svg" alt="Meus favoritos"
+                    class="container__imagem container__imagem-transparente">
+            </a>
+            <a href="#" class="container__link">
+                <img src="./img/carrinho1.png" alt="Carrinho de compras" class="container__imagem">
+                <p class="container__texto">MINHA SACOLA</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="./img/usuario1.png" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">MEU PERFIL</p>
+            </a>
+        </div>
+
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Será que já lemos o mesmo livro?</h2>
+        <p class="banner__texto">Encontre em minha coleção pessoal, algo em comum com você!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Será que temos algum gosto em comum?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Minhas últimas leituras</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./img/fantasma-opera.png" alt="fantasma da opera"></div>
+                    <div class="swiper-slide"><img src="./img/frankenstein.png" alt="frankenstein"></div>
+                    <div class="swiper-slide"><img src="./img/castelo-otranto.png" alt="castelo de otranto"></div>
+                    <div class="swiper-slide"><img src="./img/mosqueteiros.png" alt="os tres mosqueteiros"></div>
+                    <div class="swiper-slide"><img src="./img/hobbit.png" alt="hobbit"></div>
+                    <div class="swiper-slide"><img src="./img/dracula.png" alt="dracula"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1ª linha -->
+                <div class="card__descricao">
+                    <!-- 1ª coluna -->
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Eu recomendo este aqui</h3>
+                        <h2 class="descricao__titulo-livro">Hamlet</h2>
+                        <p class="descricao__texto">Não é preciso tentar engrandecer o autor com elogios e frases de
+                            efeito, pois o nome por si só, basta. Clássicos são clássicos por um motivo. Basta ler e
+                            você entenderá. Trata-se de uma história que envolve, reinos, tramas, vingança e mais um
+                            pouco</p>
+                    </div>
+                    <!-- 2ª coluna -->
+                    <img src="./img/hamlet.png" class="descricao__imagem" alt="livro angular">
+                </div>
+
+                <!-- 2ªlinha -->
+                <div class="card__botoes">
+                    <!-- 1ª coluna -->
+                    <ul class="botoes">
+                        <li class="botoes__item">
+                            <img src="./img/Favoritos.svg" alt="favoritar livro">
+                        </li>
+                        <li class="botoes__item">
+                            <img src="./img/Compras.svg" alt="adicionar ao carrinho">
+                        </li>
+                    </ul>
+                    <!-- 2ª coluna -->
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">OS MAIS INCRÍVEIS</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./img/marca-lagrima.png" alt="marca de uma lagrima"></div>
+                    <div class="swiper-slide"><img src="./img/mundo-sofia.png" alt="mundo de sofia"></div>
+                    <div class="swiper-slide"><img src="./img/viagem-terra.png" alt="viagem ao centro"></div>
+                    <div class="swiper-slide"><img src="./img/policarpo-quaresma.png" alt="policarpo quaresma"></div>
+                    <div class="swiper-slide"><img src="./img/homo-sapiens.png" alt="homo sapiens"></div>
+                    <div class="swiper-slide"><img src="./img/morte-quincas.png" alt="quincas berro dagua"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1ª linha -->
+                <div class="card__descricao">
+                    <!-- 1ª coluna -->
+                    <div class="descricao">
+                        <img src="./img/Estrelinhas.svg" alt="Estrelinhas">
+                        <h3 class="descricao__titulo">O meu autor do mês é:</h3>
+                        <h2 class="descricao__titulo-livro">Horace Walpole</h2>
+                        <p class="descricao__texto">Escritor do primeiro romance gótico da história da literatura.
+                            Simplesmente INCRÍVEL. Eu considero o Hamlet escrito em forma de narração ao invés de
+                            teatro. Mas isso é pessoal...
+                        </p>
+                    </div>
+                    <!-- 2ª coluna -->
+                    <img src="./img/horace.png" class="descricao__imagem" alt="livro angular">
+                </div>
+
+                <!-- 2ªlinha -->
+                <div class="card__botoes">
+                    <!-- 1ª coluna -->
+                    <ul class="botoes">
+                        <li class="botoes__item">
+                            <img src="./img/Favoritos.svg" alt="favoritar livro">
+                        </li>
+                        <li class="botoes__item">
+                            <img src="./img/Compras.svg" alt="adicionar ao carrinho">
+                        </li>
+                    </ul>
+                    <!-- 2ª coluna -->
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="topicos">
+        <h2 class="topicos__titulo">MINHAS FUTURAS AQUISIÇÕES</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Gabriela cravo e canela</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Capitães da areia</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Rei Arthur</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">A arte da guerra</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">1808</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">"sugestões...?"</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Fique por dentro do meu mundo!</h2>
+            <p class="contato__texto">Cadastre-se e vamos trocar ideias sobre livros. Quem sabe tomar um café!</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu email" class="contato__email">
+    </section>
+
+    <hr />
+
+    <footer class="rodape">
+        <div class="rodape__eu">
+            <h2 class="rodape__titulo">Luiz Gustavo</h2>
+            <img src="./img/lg.png" width="150px" class="imagem-eu" alt="imagem-eu">
+        </div>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">CONTATO</li>
+            <li class="lista-rodape__item">
+                <img src="./img/insta.png" alt="logo caelum">
+                <a href="#" class="lista-rodape__link">Instagram</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/git.png" alt="logo casa do codigo">
+                <a href="#" class="lista-rodape__link">Github</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/linkedin.png" alt="logo casa do codigo">
+                <a href="#" class="lista-rodape__link">Linkedin</a>
+            </li>
+        </ul>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">PROJETOS</li>
+            <li class="lista-rodape__item">
+                <img src="./img/Alura.svg" alt="logo alura">
+                <a href="#" class="lista-rodape__link">Clube do livro</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/AluraEmpresas.svg" alt="logo alura empresa">
+                <a href="#" class="lista-rodape__link">Livro para todos</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/AluraLatam.svg" alt="logo alura latam">
+                <a href="#" class="lista-rodape__link">Sebo solidário</a>
+            </li>
+        </ul>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">PARCERIAS</li>
+            <li class="lista-rodape__item">
+                <img src="./img/Scuba.svg" alt="logo scuba dev">
+                <a href="#" class="lista-rodape__link">Dark Sebo</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/Layers.svg" alt="logo layers tech">
+                <a href="#" class="lista-rodape__link">Lumadara</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="./img/LikeABoss.svg" alt="logo like boss">
+                <a href="#" class="lista-rodape__link">Queijos e vinhos</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            }
+        });
+    </script>
+</body>
+
+</html>
